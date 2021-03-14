@@ -1,4 +1,6 @@
 # majaro_KDE_asus_X205TA
+
+Used gparted to format a usb to fat32 and labeled the media.
 Use UNetbootin for a writable boot-media.
 
 in kernels.cfg change:
