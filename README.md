@@ -9,7 +9,7 @@ Thank you. Following instructions from https://gist.github.com/GeoffreyCoulaud/0
 3. Get a i386-efi folder from a 32-bit arch linux distro.
    Paste it into /boot/grub/
 
-4. Copy the grubia32.efi file to the folder /manjaro/ on the stick
+4. Copy the grubia32.efi file to the folder /manjaro/ on the stick: I got mine from http://ftp.scientificlinux.org/linux/scientific/7/x86_64/os/EFI/BOOT/
 
 5. Copy the bootia32.efi file to the folder /efi/boot/ on the stick
 
@@ -32,7 +32,7 @@ If it gives you an error, don't exit. To install grub on uefi 32 bit, open termi
 11. sudo grub-install --target=i386-efi --efi-directory=/boot/efi --bootloader-id=Manjaro --force
 
 If an error occurs run the command again.
-Boot normally without live-usb
+Boot normally without live-usb.
 
 Wifi
 
