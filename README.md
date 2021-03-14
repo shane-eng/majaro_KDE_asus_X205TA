@@ -2,11 +2,11 @@
 
 1. Download a 64bit Manjaro distro: have not tested Ubuntu.
 
-2.Used gparted to format a usb to fat32 and labeled the media.
-  Use UNetbootin to flash Manjaro for a writable boot-media.
+2. Used gparted to format a usb to fat32 and labeled the media.
+   Use UNetbootin to flash Manjaro for a writable boot-media.
 
-3.Get a i386-efi folder from a 32-bit arch linux distro.
-  Paste it into /boot/grub/
+3. Get a i386-efi folder from a 32-bit arch linux distro.
+   Paste it into /boot/grub/
 
 4. Copy the grubia32.efi to the folder /manjaro/
 
