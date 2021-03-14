@@ -23,6 +23,8 @@ Thank you. Following instructions from https://gist.github.com/GeoffreyCoulaud/0
 
 9. Boot override to the live media.
 
+from https://forum.manjaro.org/t/cant-install-manjaro-kde-20-1-1-on-an-uefi-32bit-hardware/34712/9
+
 10. Before starting calamares from the live-usb session modify the /usr/lib/calamares/modules/bootloader/main.py file and change this line to:
    check_target_env_call(...[grubinstall] --target ... , "--no-nvram", "--removable"])
 
