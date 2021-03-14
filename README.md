@@ -24,6 +24,7 @@ Thank you. Following instructions from https://gist.github.com/GeoffreyCoulaud/0
 9. Boot override to the live media.
 
 from https://forum.manjaro.org/t/cant-install-manjaro-kde-20-1-1-on-an-uefi-32bit-hardware/34712/9
+https://archive.is/uXEXk
 
 10. Before starting calamares from the live-usb session modify the /usr/lib/calamares/modules/bootloader/main.py file and change this line to:
    check_target_env_call(...[grubinstall] --target ... , "--no-nvram", "--removable"])
@@ -40,6 +41,7 @@ Boot normally without live-usb.
 
 From harryharryharry on ubuntu forums getting linux to work on X205TA.
 https://ubuntuforums.org/archive/index.php/t-2379657.html
+https://archive.is/lgYMJ
 
 Use brcmfmac43340-sdio.txt from
 https://raw.githubusercontent.com/harryharryharry/x205ta-iso2usb-files/master/brcmfmac43340-sdio.txt
