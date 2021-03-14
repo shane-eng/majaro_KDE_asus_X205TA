@@ -27,7 +27,7 @@ Thank you. Following instructions from https://gist.github.com/GeoffreyCoulaud/0
    check_target_env_call(...[grubinstall] --target ... , "--no-nvram", "--removable"])
 
 Install from calamares.
-If it gives you an error, don't exit. To install grub on uefi 32 bit, open terminal and type:
+If it gives you an error, don't turn off yet. To install grub on uefi 32 bit, open terminal and type:
 
 11. sudo grub-install --target=i386-efi --efi-directory=/boot/efi --bootloader-id=Manjaro --force
 
@@ -36,4 +36,8 @@ Boot normally without live-usb.
 
 Wifi
 
+
+harryharryharry from ubuntu forums getting linux to work on X205TA for reference.
+
+https://ubuntuforums.org/archive/index.php/t-2379657.html
 
