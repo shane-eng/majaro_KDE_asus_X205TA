@@ -34,7 +34,7 @@ If it gives you an error, don't turn off yet. To install grub on uefi 32 bit, op
 If an error occurs run the command again.
 Boot normally without live-usb.
 
-Get Wifi working.
+# Get Wifi working.
 
 From harryharryharry on ubuntu forums getting linux to work on X205TA.
 https://ubuntuforums.org/archive/index.php/t-2379657.html
