@@ -50,11 +50,11 @@ The internal wireless card’s module (brcmfmac) needs a file called /lib/firmwa
 sudo modprobe efivarfs
 sudo mount -t efivarfs efivarfs /sys/firmware/efi/efivars
 
-# then copy the file that starts with nvram to /lib/firmware/brcm
+# in my case, wifi did not load in nvram so copy brcmfmac43340-sdio.txt directly into /lib/firmware/brcm/
 sudo cp -a /sys/firmware/efi/efivars/nvram* /lib/firmware/brcm/brcmfmac43340-sdio.txt
 
 # and reload the brcmfmac module
 sudo rmmod brcmfmac
 sudo modprobe brcmfmac
 
-
+I had to restart the machine to connect.
