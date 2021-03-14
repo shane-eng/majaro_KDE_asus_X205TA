@@ -34,10 +34,27 @@ If it gives you an error, don't turn off yet. To install grub on uefi 32 bit, op
 If an error occurs run the command again.
 Boot normally without live-usb.
 
-Wifi
+Get Wifi working.
 
-
-harryharryharry from ubuntu forums getting linux to work on X205TA for reference.
-
+From harryharryharry on ubuntu forums getting linux to work on X205TA.
 https://ubuntuforums.org/archive/index.php/t-2379657.html
+
+Use brcmfmac43340-sdio.txt from
+https://raw.githubusercontent.com/harryharryharry/x205ta-iso2usb-files/master/brcmfmac43340-sdio.txt
+which has the added benefit of supporting 5GHz networks (pretty weird the version in the EFI variables doesn’t...)
+
+2. How to gain internet connectivity
+The internal wireless card’s module (brcmfmac) needs a file called /lib/firmware/brcm/brcmfmac43340-sdio.txt to get the card up and running, but it’s missing (well it’s not in the right location). You can copy it by running the following commands:
+
+# probably not necessary, but to be sure the EFI variables are properly exposed to userspace
+sudo modprobe efivarfs
+sudo mount -t efivarfs efivarfs /sys/firmware/efi/efivars
+
+# then copy the file that starts with nvram to /lib/firmware/brcm
+sudo cp -a /sys/firmware/efi/efivars/nvram* /lib/firmware/brcm/brcmfmac43340-sdio.txt
+
+# and reload the brcmfmac module
+sudo rmmod brcmfmac
+sudo modprobe brcmfmac
+
 
