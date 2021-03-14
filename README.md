@@ -2,7 +2,7 @@
 
 1. Download a 64bit Manjaro distro: have not tested Ubuntu.
 
-2. Used gparted to format a usb to fat32 and labeled the media.
+2. Used gparted to format a usb to fat32 and label the media.
    Use UNetbootin to flash Manjaro for a writable boot-media.
 
 3. Get a i386-efi folder from a 32-bit arch linux distro.
@@ -12,7 +12,7 @@
 
 
 5. in kernels.cfg change:
-   misolabel= insert_label_of_media here
+   misolabel= insert_label_of_media_here
  
 6. in grub.cfg change a line in function efi_detect to:
    for efi in (*,gpt*)/efi/*/*.efi (*,gpt*)/efi/*/*/*.efi (*,gpt*)/*.efi (*,gpt*)/*/*.efi (*,msdos*)/*/*/*.efi ; do
