@@ -61,4 +61,4 @@ sudo rmmod brcmfmac
 sudo modprobe brcmfmac
 
 
-AFter this, I had to restart the machine to connect.
+After this, I had to restart the machine to connect.
