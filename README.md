@@ -22,7 +22,7 @@
 8. Boot override to the live media.
 
 9. Before starting calamares from the live-usb session modify the /usr/lib/calamares/modules/bootloader/main.py file and change this line to:
-   check_target_env_call(...[grubinstall] --target ... , "--no-nvram", "removable"])
+   check_target_env_call(...[grubinstall] --target ... , "--no-nvram", "--removable"])
 
 Install from calamares.
 If it gives you an error, don't exit. To install grub on uefi 32 bit, open terminal and type
