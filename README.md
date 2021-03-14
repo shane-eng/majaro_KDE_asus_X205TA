@@ -21,7 +21,7 @@ Thank you. Following instructions from https://gist.github.com/GeoffreyCoulaud/0
 
 8. in F2 menu select USB Controller Select to EHCI and Disable secure boot.
 
-9 Boot override to the live media.
+9. Boot override to the live media.
 
 10. Before starting calamares from the live-usb session modify the /usr/lib/calamares/modules/bootloader/main.py file and change this line to:
    check_target_env_call(...[grubinstall] --target ... , "--no-nvram", "--removable"])
