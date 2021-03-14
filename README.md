@@ -57,4 +57,5 @@ sudo cp -a /sys/firmware/efi/efivars/nvram* /lib/firmware/brcm/brcmfmac43340-sdi
 sudo rmmod brcmfmac
 sudo modprobe brcmfmac
 
-I had to restart the machine to connect.
+
+AFter this, I had to restart the machine to connect.
