@@ -1,0 +1,1 @@
+# majaro_KDE_asus_X205TA
