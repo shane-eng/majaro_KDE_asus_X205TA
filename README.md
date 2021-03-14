@@ -53,7 +53,6 @@ sudo modprobe efivarfs
 sudo mount -t efivarfs efivarfs /sys/firmware/efi/efivars
 
 # in my case, wifi did not load in nvram so copy brcmfmac43340-sdio.txt directly into /lib/firmware/brcm/
-sudo cp -a /sys/firmware/efi/efivars/nvram* /lib/firmware/brcm/brcmfmac43340-sdio.txt
 
 # and reload the brcmfmac module
 sudo rmmod brcmfmac
