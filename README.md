@@ -28,5 +28,9 @@ Install from calamares.
 If it gives you an error, don't exit. To install grub on uefi 32 bit, open terminal and type
 
 10. sudo grub-install --target=i386-efi --efi-directory=/boot/efi --bootloader-id=Manjaro --force
+
 If an error occurs run the command again.
+
+Wifi
+
 
