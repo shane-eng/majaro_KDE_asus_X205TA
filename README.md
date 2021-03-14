@@ -62,3 +62,6 @@ sudo modprobe brcmfmac
 
 
 After this, I had to restart the machine to connect.
+
+# issues
+Touchpad does not work after suspend.
