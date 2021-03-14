@@ -3,7 +3,7 @@ Use UNetbootin for a writable boot-media.
 
 in kernels.cfg change:
 
-misolabel=<insert label of media here>
+misolabel= insert_label_of_media here
  
 in grub.cfg change a line in function efi_detect to:
 
